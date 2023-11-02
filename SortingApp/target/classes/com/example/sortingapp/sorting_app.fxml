@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sortingapp.SortingController">
+  <HBox spacing="10">
+    <Button text="Пузырьковая сортировка" onAction="#bubbleSort"/>
+    <Button text="Сортировка выбором" onAction="#selectionSort"/>
+    <Button text="Сортировка вставками" onAction="#insertionSort"/>
+  </HBox>
+  <TextField fx:id="inputArrayField" promptText="Enter numbers, e.g., 5 2 8 1"/>
+  <Label text="Result:"/>
+  <Label fx:id="resultLabel"/>
+</VBox>
